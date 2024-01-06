@@ -1,5 +1,7 @@
 <html style="background: #000;">
 <head>
+  <meta name="description" content="MetaThreads is a meta-search integration for forum Threads." />
+	<meta name="keywords" content="Internet Search, Privacy, Meta Search Engine, Meta, Search Anonymous, Threads search, Discussions, MetaThreads, MetaThreads.org" />
     <link rel="apple-touch-icon" sizes="57x57" href="static/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="static/img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="static/img/favicon/apple-icon-72x72.png">
@@ -21,7 +23,7 @@
         <script src="{{ cb_url('autocomplete.js') }}"></script>
     {% endif %}
     <script type="text/javascript" src="{{ cb_url('controller.js') }}"></script>
-    <link rel="search" href="opensearch.xml" type="application/opensearchdescription+xml" title="Whoogle Search">
+    <link rel="search" href="opensearch.xml" type="application/opensearchdescription+xml" title="Meta Threads">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ cb_url('logo.css') }}">
     {% if config.theme %}
@@ -56,12 +58,17 @@
         </style>
     </noscript>
     <style>{{ config.style }}</style>
-    <title>Whoogle Search</title>
+    <title>MetaThreads</title>
 </head>
 <body id="main">
 <div class="search-container">
     <div class="logo-container">
-        {{ logo|safe }}
+        <center>{{ logo|safe }}</center>
+    </div>
+      <div class="logo-container">
+      <center>Connecting Forum Threads Through Search</center>
+        
+        <br> 
     </div>
     <form id="search-form" action="search" method="{{ 'get' if config.get_only else 'post' }}">
         <div class="search-fields">
@@ -239,7 +246,7 @@
                         </div>
                         <div class="config-div config-div-custom-css">
                             <a id="css-link"
-                               href="https://github.com/benbusby/whoogle-search/wiki/User-Contributed-CSS-Themes">
+                               href="">
                                 {{ translation['config-css'] }}:
                             </a>
                             <textarea
